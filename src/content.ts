@@ -6,14 +6,42 @@ export const content = {
 
 export const projects = [
     {
-        title: 'Test Name',
-        subtitle: 'Something about the tech',
+        title: 'Equips.com',
+        subtitle: 'React GraphQL Lambda Postgresql',
         description:
-            'Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium dolore rerum laborum iure enim sint nemo omnis voluptate exercitationem eius?',
-        image: 'whatever.gif',
-        link: 'website',
+            'A work order management software designed to integrate with 3rd party customers, providers, and notifications. Built with React, GraphQL, Typescript, DynamoDB, PostgresQL, and hosted on AWS Lambda. ',
+        image: './EquipsScreenShot.png',
+        link: 'https://equips.com',
+    },
+    {
+        title: 'SVB Onboarding',
+        subtitle: 'React Node.js SAAS AWS',
+        description:
+            'An onboarding application designed to handle banking regulations globally for the needs of the start up community. Built with React, Node.js, Fenergo SAAS, Hosted on Openshift using Docker.',
+        image: './SVBScreenShot.png',
+        link: 'https://www.svb.com/connect/',
+    },
+    {
+        title: 'USAA Small Business Insurance',
+        subtitle: 'React Openshift SAAS',
+        description:
+            'A greenfield small business insurance quote and sales platform. Built with React, Redux, Springboot, Guidewire SAAS, and hosted on Openshift using Docker.',
+        image: './USAASmallBusiness.png',
+        link: 'https://www.usaa.com/insurance/small-business-quote#/industrySelection',
+    },
+    {
+        title: 'USAA Life Insurance',
+        subtitle: 'JAVA Openshift',
+        description:
+            'A modern life insurance quote application. Built with React, Java, Couchbase, and hosted on Openshift using Docker.',
+        image: './USAALifeQuote.png',
+        link: 'https://www.usaa.com/insurance/life-insurance-quote-public/personal-information/state',
     },
 ];
+
+export const projectContent = {
+    intro: 'Below is a sampling of project I have contributed to in the past and present',
+};
 
 export const testimonials = [
     {
