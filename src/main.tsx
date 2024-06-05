@@ -5,6 +5,15 @@ import App from './App.tsx';
 import './index.css';
 import ErrorPage from './components/ErrorPage.tsx';
 import Resume from './components/Resume.tsx';
+import { projects } from './content.ts';
+import Project from './components/Project.tsx';
+
+const projectRoutes = projects.map((el) => {
+    return {
+        path: `/${el.route}`,
+        element: <Project {...el} />,
+    };
+});
 
 const router = createHashRouter([
     {
@@ -17,6 +26,7 @@ const router = createHashRouter([
         element: <Resume />,
         errorElement: <ErrorPage />,
     },
+    ...projectRoutes,
 ]);
 
 ReactDOM.createRoot(document.getElementById('root')!).render(

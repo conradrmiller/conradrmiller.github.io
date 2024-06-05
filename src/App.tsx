@@ -3,6 +3,7 @@ import About from './components/About';
 import Skills from './components/Skills';
 import Links from './components/Links';
 import Projects from './components/Projects';
+import { ScrollRestoration } from 'react-router-dom';
 
 function App() {
     return (
@@ -12,6 +13,7 @@ function App() {
             <Projects />
             <Skills />
             <Links />
+            <ScrollRestoration />
         </main>
     );
 }
