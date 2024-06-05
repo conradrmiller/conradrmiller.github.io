@@ -1,5 +1,6 @@
 import { CodeIcon } from '@heroicons/react/solid';
 import { projects, projectContent } from '../content';
+import { Link } from 'react-router-dom';
 
 export default function Projects() {
     return (
@@ -16,8 +17,8 @@ export default function Projects() {
                 </div>
                 <div className="flex flex-wrap -m-4">
                     {projects.map((project) => (
-                        <a
-                            href={project.link}
+                        <Link
+                            to={project.route}
                             key={project.image}
                             className="sm:w-1/2 w-100 p-4"
                         >
@@ -39,7 +40,7 @@ export default function Projects() {
                                     </p>
                                 </div>
                             </div>
-                        </a>
+                        </Link>
                     ))}
                 </div>
             </div>
