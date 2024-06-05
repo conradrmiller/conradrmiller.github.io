@@ -1,12 +1,12 @@
 import { useEffect } from 'react';
-import { useRouteError } from 'react-router-dom';
+import { useNavigate, useRouteError } from 'react-router-dom';
 
 const ErrorPage = () => {
     const error = useRouteError();
-    //   const navigate = useNavigate()
+    const navigate = useNavigate();
     console.error(error);
     useEffect(() => {
-        // navigate('/')
+        navigate('/');
     });
 
     return (
