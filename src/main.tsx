@@ -16,9 +16,14 @@ const projectRoutes = projects.map((el) => {
 });
 
 const router = createHashRouter([
+    // {
+    //     path: '/',
+    //     element: <App />,
+    //     errorElement: <ErrorPage />,
+    // },
     {
         path: '/',
-        element: <App />,
+        element: <Resume />,
         errorElement: <ErrorPage />,
     },
     {
@@ -32,5 +37,5 @@ const router = createHashRouter([
 ReactDOM.createRoot(document.getElementById('root')!).render(
     <React.StrictMode>
         <RouterProvider router={router} />
-    </React.StrictMode>
+    </React.StrictMode>,
 );
